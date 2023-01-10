@@ -29,11 +29,11 @@ if (form) {
       .then((response) => {
         const status = response.status;
         if (status == 200) {
-          window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8080/front_end/2fa.html?email=" + email;
+          window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8000/front_end/2fa.html?email=" + email;
           return null;
         }
         alert("Something went wrong!\nUser or password is incorrect!");
-        window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8080/front_end/index.html";
+        window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8000/front_end/index.html";
         return response.text();
       })
       .catch((error) => console.log("error", error));
