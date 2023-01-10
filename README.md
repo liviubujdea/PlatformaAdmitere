@@ -1,2 +1,3 @@
-# PlatformaAdmitere
-O platforma de admitere in cadrul ATM
+# Platforma-Admitere
+
+Tema IP - Platforma Amitere

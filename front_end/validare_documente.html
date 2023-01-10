@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Admitere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="secretar.html" class="logo"><span>ATM</span>Admitere</a>
+
+      <nav class="navbar">
+        <a href="vizualizare_candidati.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Vizualizare candidați</a>
+        <a href="validare_documente.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Validare documente</a>
+        <a href="note_candidati.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Note candidați</a>
+        <a href="statistici.html" onclick="location.href=this.href+'?email=' + encodeURIComponent(email);return false;" >Vizualizare statistici</a>
+      </nav>
+        <h2>Sunteți logat ca <span id="myEmail"></span>/SECRETAR</h2>
+      <h2><a href="#" onclick="logout()">Delogare</a></h2>
+    </header>
+
+    <section class="search_box" id="search_box">
+      <form method="POST">
+        <h3>Validare documente</h3>
+        <table class="table-resp">
+				
+          <thead>
+              <tr>
+              <th><i>Nume candidat</i></th>
+              <th><i>Link candidat</i></th>
+              </tr>
+          <thead>
+          <!-- tbody o sa fie completat in fct de nr de candidati ce asteapta sa li se valideze documentele --> 
+          <tbody>
+              <tr>
+              <td>Candidat</td>
+              <td><a href="link">pdf-uri candidat</a></td>
+              <td>
+                <input
+                type="submit"
+                name="validare"
+                value="Validati documentele"
+                class="btn"
+              />
+              <input
+                type="submit"
+                name="respingere"
+                value="Respingeti documentele"
+                class="btn"
+              />
+              </td>
+              </tr>
+
+
+              <tr>
+                <td>Candidat 2</td>
+                <td><a href="link">pdf-uri candidat 2</a></td>
+                <td>
+                  <input
+                  type="submit"
+                  name="validare"
+                  value="Validati documentele"
+                  class="btn"
+                />
+                <input
+                  type="submit"
+                  name="respingere"
+                  value="Respingeti documentele"
+                  class="btn"
+                />
+                </td>
+              </tr>
+          </tbody>
+          
+      </table>
+        
+      </form>
+    </section>
+    <script src="validare_documente.js"></script>
+    <script src="delogare.js"></script>
+  </body>
+</html>
