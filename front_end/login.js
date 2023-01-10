@@ -25,7 +25,7 @@ if (form) {
       redirect: "follow",
     };
     const encodedEmail = encodeURIComponent(email);
-    fetch("http://localhost:8081/login", requestOptions)
+    fetch("https://liviubujdea.github.io/PlatformaAdmitere/front_end/login", requestOptions)
       .then((response) => {
         const status = response.status;
         if (status == 200) {
