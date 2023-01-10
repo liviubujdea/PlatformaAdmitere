@@ -25,15 +25,15 @@ if (form) {
       redirect: "follow",
     };
     const encodedEmail = encodeURIComponent(email);
-    fetch("https://liviubujdea.github.io:8081/PlatformaAdmitere/front_end/index", requestOptions)
+    fetch("https://liviubujdea.github.io/PlatformaAdmitere:8081/front_end/index", requestOptions)
       .then((response) => {
         const status = response.status;
         if (status == 200) {
-          window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end/2fa.html?email=" + email;
+          window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8080/front_end/2fa.html?email=" + email;
           return null;
         }
         alert("Something went wrong!\nUser or password is incorrect!");
-        window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end/index.html";
+        window.location = "https://liviubujdea.github.io/PlatformaAdmitere:8080/front_end/index.html";
         return response.text();
       })
       .catch((error) => console.log("error", error));
