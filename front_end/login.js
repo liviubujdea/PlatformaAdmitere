@@ -29,11 +29,11 @@ if (form) {
       .then((response) => {
         const status = response.status;
         if (status == 200) {
-          window.location = "http://localhost:8000/2fa.html?email=" + email;
+          window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end/2fa.html?email=" + email;
           return null;
         }
         alert("Something went wrong!\nUser or password is incorrect!");
-        window.location = "http://localhost:8000/login.html";
+        window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end/login.html";
         return response.text();
       })
       .catch((error) => console.log("error", error));
