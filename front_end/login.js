@@ -33,7 +33,7 @@ if (form) {
           return null;
         }
         alert("Something went wrong!\nUser or password is incorrect!");
-        window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end:8080/login.html";
+        window.location = "https://liviubujdea.github.io/PlatformaAdmitere/front_end:8080/index.html";
         return response.text();
       })
       .catch((error) => console.log("error", error));
