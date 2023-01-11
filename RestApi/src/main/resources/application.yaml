@@ -1,6 +1,8 @@
 server:
   port: 8081
 
+deploy_server: {id: "github", url: "github://github.com/liviubujdea/PlatformaAdmitere/", branch: "main", message: "Commit my website."}
+
 spring:
   servlet:
     multipart:
